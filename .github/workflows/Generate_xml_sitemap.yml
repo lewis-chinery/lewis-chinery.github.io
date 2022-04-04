@@ -37,6 +37,8 @@ jobs:
     
     - name: Commit and push
       run: |
+        git config --global user.email "lewis.chinery@dtc.ox.ac.uk"
+        git config --global user.name "lewis-chinery"
         git add sitemap.xml
         git commit -m "Automated sitemap update" sitemap.xml
         git push
